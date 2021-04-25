@@ -1,0 +1,30 @@
+After completing the assignment, be sure to push to Github. You do not have to worry about pushing to Heroku this lesson.
+Please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your source code repository (e.g., GitHub):
+
+https://github.com/isabelaranguren/cse341-node.git
+
+3. Briefly list and describe the elements of the application that are functioning. 
+Three routes are handled in the form are displayed in the console
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+The list of users on the /users page.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+This is my first time using node.js so I found everything interesting
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+A better explanation in how to display  a list of users 
+
+7. Please select the category you feel best describes your assignment:
+   1 - Some attempt was made
+   2 - Developing, but significantly deficient
+   3 - Slightly deficient, but still mostly adequate
+   4 - Meets requirements
+   5 - Shows creativity and excels above and beyond requirements
+4
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+The assignment meets the basic requirements. Three routes are handled in the form are displayed in the console,  
+added a new startup configuration called "prove01" and used nodemon
