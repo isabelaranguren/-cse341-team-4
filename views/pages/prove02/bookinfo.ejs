@@ -13,28 +13,27 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-sm-offset-2 col-md-offset-2" style="padding: 0 15px">
+      <div class="col-sm-offset-6 col-md-offset-6">
         <% if (books.length > 0) { %>
           <div class="text-center">
-            <h2>Your book list!</h2>
+            <h2>Your Books</h2>
           </div>
         <% for (let book of books) { %>
         <div class="book">
           <div class="col-6 col-6">
           <h3>
-            Title:
-            <%= book.title %>
+            Title:  <%= book.title %>
           </h3>
           <% if (book.author != "") { %>
             <h3>
               Author:
               <%= book.author %>
             </h3>              
-            <% } %>                  
-          <h3>
-            Book Summary:
-            <%= book.summary %>
-          </h3>
+            <% } %>    
+            
+          <h3>Book Summary:</h3>
+          <p><%= book.summary %>
+          </p>
           <form action="/prove02/remove-book" method="POST">
             <input type="hidden" name="deleteBook" value="<%= books.indexOf(book) %> ">
             <button type="submit">Delete this book</button>
