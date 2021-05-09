@@ -41,20 +41,3 @@
   width: 5rem;
   height: 5rem;
 }
-
-textarea {
-  width: 100%;
-  color: grey;
-}
-
-p {
-  line-height: 1.8em;
-  font-size: 16px;
-  font-weight: 300;
-  color: grey;
-
-}
-
-h3 {
-  font-weight: 500;
-}

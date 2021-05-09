@@ -1,0 +1,23 @@
+[
+    {
+      "id": "123245",
+      "title": "Jujutsu Kaisen, Vol. 7",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/5199pE7FgDL._SX331_BO1,204,203,200_.jpg",
+      "description":"Despite the injuries and losses they suffered in an attack on the Goodwill Event, the students of Jujutsu High have little time rest as people start dying under mysterious circumstances. Could these strange deaths have anything to do with Sukuna's lost fingers?",
+      "price": "9.99"
+    },
+    {
+      "id": null,
+      "title": "Jujutsu Kaisen, Vol. 9",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51yLMj52VKL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
+      "description": "Satoru Gojo and Suguru Geto have been assigned a mission to escort the Star Plasma Vessel to Master Tengen. When they’re ambushed by Toji Fushiguro, a mercenary known as the Sorcerer Killer, will Gojo and Geto survive? And will this be the turning point where Gojo becomes the world's strongest exorcist while Geto embraces a life of ruin and rebellion?",
+      "price": "9.99"
+    },
+    {
+      "id": null,
+      "title": "Jujutsu Kaisen, Vol. 8",
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/511ZDIsKPwL._SX331_BO1,204,203,200_.jpg",
+      "description": "Yuji Itadori and his classmates are fighting two of the three reincarnated Cursed Womb: Death Paintings brothers. Meanwhile, Megumi Fushiguro loses consciousness after finally defeating a special grade curse that possessed a Sukuna finger! Whoever wins the fight between Itadori and the brothers will be the one to secure the prized finger!",
+      "price": "9.99"
+    }
+  ]

@@ -1,0 +1,26 @@
+<%- include('includes/head.ejs') %>
+
+<body>
+    <%- include('includes/navProve02.ejs') %>
+    <main>
+        <% if (books.length > 0) { %>
+        <h1>List of Books</h1>
+        <div class="grid">
+            <% for (let book of books) { %>
+            <article class="card">
+                <header class="card-title">
+                    <h2><%= book.title %></h1>
+                </header>
+                <div class="card-summary">
+                    <p><%= book.summary %></p>
+                </div>
+            </article>
+            <% } %>
+        </div>
+        <% } else { %>
+        <h1>No Books Found!</h1>
+        <% } %>
+    </main>
+</body>
+
+</html>
