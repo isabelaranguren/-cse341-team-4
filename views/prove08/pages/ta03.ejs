@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include ../includes/header.ejs %>
+  <link rel="stylesheet" href="/prove/ta03.css"">
+</head>
+
+<body>
+  <% include ../includes/nav.ejs %>
+  <div class=" jumbotron text-center">
+  <div class="container">
+    <h1><%= title %></h1>
+  </div>
+  </div>
+  <div class="container">
+    <% if (products.length > 0) { %>
+    <h2>Product Listing</h2>
+    <form action="/proveActivities/prove08/search" method="get">
+      <input type="text" name="query" id="query">
+      <button type="submit">Search</button>
+    </form>
+    <div class="product-container">
+      <% for (product of products) { %>
+      <div class="product">
+        <div>
+          <h3><%= product.name %> - $<%= product.price %></h3>
+          <div class="product-image">
+            <img src="<%= product.imageUrl %>" alt="<%= product.name %>">
+          </div>
+        </div>
+        <div>
+          <p><%= product.description %></p>
+          <p>Tags: <%= product.tags.join(", ") %></p>
+        </div>
+      </div>
+      <% } %>
+    </div>
+    <% } else { %>
+    <h2>No Products Found!</h2>
+    <% } %>
+
+
+    <div class="pagination">
+      <% if (currentPage !== 1 && previousPage !== 1) { %>
+      <a href="?page=1" class="btn btn-default">1</a>
+      <% } %>
+      <% if (hasPreviousPage) { %>
+      <a href="?page=<%= previousPage %>" class="btn btn-default"><%= previousPage %></a>
+      <% } %>
+      <a href="?page=<%= currentPage %>" class='btn btn-primary'><%= currentPage %></a>
+      <% if (hasNextPage) { %>
+      <a href="?page=<%= nextPage %>" class="btn btn-default"><%= nextPage %></a>
+      <% } %>
+      <% if (lastPage !== currentPage && nextPage !== lastPage) { %>
+      <a href="?page=<%= lastPage %>" class="btn btn-default"><%= lastPage %></a>
+      <% } %>
+    </div>
+
+
+  </div>
+
+
+  </body>
+
+</html>

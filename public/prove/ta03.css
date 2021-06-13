@@ -1,0 +1,43 @@
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 330px);
+    justify-content: space-between;
+    gap: 2.5em;
+    margin: 1.5rem auto;
+}
+
+.product-image {
+    height: 200px;
+}
+
+.product-container img {
+    max-width: 100%;
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.product-container .product {
+    border: 1px solid rgb(233, 233, 233);
+    box-shadow: 0 0 10px rgb(245, 244, 244);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.pagination a {
+    margin: 0 1rem;
+}
