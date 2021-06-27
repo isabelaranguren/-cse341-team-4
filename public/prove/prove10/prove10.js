@@ -6,11 +6,11 @@ const populateList = () => {
             herosList.innerText = '';
             for (let i = 0; i < data.avengers.length; i++) {
                 const hero = document.createElement('li');
-                const heroName = document.createElement('p');
-                heroName.innerText = `Name: ${data.avengers[i].name}`;
+                const heroPower = document.createElement('p');
+                heroPower.innerText = `Name: ${data.avengers[i].name}`;
                 const heroSuper = document.createElement('p');
-                heroSuper.innerText = `Hero name: ${data.avengers[i].heroName}`;
-                hero.appendChild(heroName);
+                heroSuper.innerText = `Status: ${data.avengers[i].heroPower}`;
+                hero.appendChild(heroPower);
                 hero.appendChild(heroSuper);
                 herosList.appendChild(hero);
             }

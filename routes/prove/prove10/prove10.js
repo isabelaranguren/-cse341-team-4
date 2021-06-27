@@ -1,32 +1,34 @@
 const express = require('express');
 const router = express.Router();
+const fs = require('fs');
+
 
 // Path to your JSON file, although it can be hardcoded in this file.
 const dummyData = {
     "avengers": [
         {
             "name": "Tony Stark",
-            "heroName": "Iron Man"
+            "heroPower": "Genius, billionaire, playboy, philanthropist"
         },
         {
             "name": "Steve Rogers",
-            "heroName": "Captain America"
+            "heroPower": "Super Soldier"
         },
         {
             "name": "Thor Odinson",
-            "heroName": "Thor"
+            "heroPower": "God of Thunder"
         },
         {
             "name": "Bruce Banner",
-            "heroName": "Hulk"
+            "heroPower": "Super Strength"
         },
         {
             "name": "Natasha Romanova",
-            "heroName": "Black Widow"
+            "heroPower": "Spy"
         },
         {
             "name": "Clint Barton",
-            "heroName": "Hawkeye"
+            "heroPower": "Spy"
         }
     ]
 }
@@ -44,11 +46,13 @@ router.get('/fetchAll', (req, res, next) => {
 
 router.post('/insert', (req, res, next) => {
 
-    if (req.body.newName && req.body.newHero) {
+    if (req.body.newName && req.body.newHero !== undefined) {
         const newName = req.body.newName;
         const newHero = req.body.newHero;
-        dummyData.avengers.push({ name: newName, heroName: newHero });
+        if (!dummyData.avengers.some(a => a.name === newName && b.heroPower === newHero)) {
+        dummyData.avengers.push({ name: newName, heroPower: newHero });
         res.sendStatus(200);
+        }
     } else {
         res.sendStatus(400);
     }
