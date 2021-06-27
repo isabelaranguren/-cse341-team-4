@@ -49,7 +49,7 @@ router.post('/insert', (req, res, next) => {
     if (req.body.newName && req.body.newHero !== undefined) {
         const newName = req.body.newName;
         const newHero = req.body.newHero;
-        if (!dummyData.avengers.some(a => a.name === newName && b.heroPower === newHero)) {
+        if (!dummyData.avengers.some(a => a.name === newName)) {
         dummyData.avengers.push({ name: newName, heroPower: newHero });
         res.sendStatus(200);
         }
